@@ -15,6 +15,6 @@ pixels = img.load()
 for x in range(width):
     for y in range(height):
         (r, g, b, a) = pixels[x, y]
-        pixels[x, y] = (int(r / 10), randint(10, 250), randint(10, 250))
+        pixels[x, y] = (int(r / 10), randint(0, 255), randint(0, 255))
 
 img.save("oloc.png")
