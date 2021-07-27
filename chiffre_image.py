@@ -8,6 +8,7 @@ from random import randint
 from PIL import Image
 
 image_name = input("Quelle image voulez-vous chiffrer ?\n")
+image_ext = image_name[-4:].lower()
 img = Image.open(image_name)
 
 width, height = img.size
