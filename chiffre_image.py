@@ -22,4 +22,4 @@ for x in range(width):
             (r, g, b) = pixels[x, y]
         pixels[x, y] = (int(r / 10), randint(0, 255), randint(0, 255))
 
-img.save("oloc" + image_ext)
+img.save(image_name + "_uncrypted" + image_ext)
